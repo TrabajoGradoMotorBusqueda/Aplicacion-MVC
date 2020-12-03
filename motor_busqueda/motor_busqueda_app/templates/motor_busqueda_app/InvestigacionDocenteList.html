@@ -1,0 +1,26 @@
+{% block content %}
+<div>
+    <strong><center><font color="blue" size="8">INVESTIGACIONES DE DOCENTES</font></center></strong>
+    <br>
+    <br>
+    <br>
+</div>
+
+{% for docente in investigaciones_docentes%}
+    <a href="/motor_busqueda_app/investigacion_docente/visualizar/{{docente.id}}/">
+        <font color="00FF00" size="3">Id investigación:</font><font size="3"> {{docente.id_investigacion}} </font>
+        <br>
+        <font color="00FF00" size="3">Título investigación:</font><font size="3"> {{docente.titulo_investigacion}} </font>
+    </a>
+    
+    <br>
+    <br>
+    <br>
+{% endfor %}
+
+
+
+{% endblock content %}
+
+
+

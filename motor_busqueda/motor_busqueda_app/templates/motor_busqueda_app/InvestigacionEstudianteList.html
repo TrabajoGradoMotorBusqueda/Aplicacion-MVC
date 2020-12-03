@@ -1,0 +1,24 @@
+{% block content %}
+<div>
+    <strong><center><font color="blue" size="8">INVESTIGACIONES DE ESTUDIANTES</font></center></strong>
+    <br>
+    <br>
+    <br>
+</div>
+
+{% for estudiante in investigaciones_estudiantes%}
+    
+    <a href="/motor_busqueda_app/investigacion_estudiante/visualizar/{{estudiante.id}}/">
+        <font color="00FF00" size="3">Id investigación:</font><font size="3"> {{estudiante.id_investigacion}} </font>
+        <br>
+        <font color="00FF00" size="3">Título investigación:</font><font size="3"> {{estudiante.titulo_investigacion}} </font>
+    </a>
+
+    <br>
+    <br>
+    <br>
+{% endfor %}
+
+
+
+{% endblock content %}
